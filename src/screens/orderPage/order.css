@@ -1,0 +1,150 @@
+body {
+  overflow-x: hidden;
+}
+
+.secNav {
+  margin: 1rem;
+}
+.secNav a {
+  text-decoration: none;
+  margin: 5px;
+}
+.text-dark {
+  text-decoration: none;
+  color: #343a40 !important;
+}
+.mycard {
+  /* border: 1px solid gray; */
+
+  box-sizing: border-box;
+  overflow-x: hidden;
+
+  border-radius: 3px;
+  box-shadow: 0 0 1px 1px rgb(120 120 120 / 40%);
+  transition: box-shadow 0.2s ease-in-out;
+  cursor: pointer;
+  background: #fff;
+  margin-bottom: 10px;
+}
+.mycard-img-container {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background-size: cover;
+  background-position: center;
+  min-width: 140px;
+  min-height: 140px;
+}
+.mycard-detail {
+  overflow-y: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  margin-bottom: 10px;
+}
+
+.textline {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  color: #000;
+  font-size: 13px;
+}
+.mycard-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 15px;
+  color: #000;
+  margin-bottom: 10px;
+}
+.mycard-left {
+  padding-top: 10px;
+}
+.mycard-header,
+.mycard-detail,
+.myprice {
+  padding-left: 10px;
+}
+.myprice {
+  font-size: 15px;
+  color: #000;
+}
+.myaccordian-header {
+  font-size: 23px;
+  font-weight: bold;
+}
+.sub-header {
+  font-size: 14px;
+  display: block;
+}
+.css-o4b71y-MuiAccordionSummary-content {
+  flex-direction: column !important;
+}
+.mycard .row {
+  flex-wrap: nowrap !important;
+}
+.padd-right {
+  padding-right: 20px;
+}
+.myaccordian-header:hover {
+  color: #1072d3 !important;
+}
+.info {
+  width: 200px;
+
+  background-color: white;
+  position: absolute;
+  right: 16%;
+  top: -2%;
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  z-index: 100;
+  transition: all 0.2s ease;
+  opacity: 0;
+}
+.info-header {
+  border-radius: 5px 0px;
+  background-color: lightgray;
+  color: #000;
+  font-size: 14px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+.info-txt {
+  margin-left: 20px;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+/* .MuiSvgIcon-root path{
+    color: #1072d3 !important;
+} */
+
+@media (max-width: 1630px) {
+  .mycard-img-container {
+    min-width: 100px;
+    min-height: 100px;
+  }
+}
+@media (max-width: 595px) {
+  .mycard-img-container {
+    min-width: 100px;
+    min-height: 100px;
+  }
+}
+@media (max-width: 420px) {
+  .mycard-img-container {
+    min-width: 80px;
+    min-height: 80px;
+  }
+}
